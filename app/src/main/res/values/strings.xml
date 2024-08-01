@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">Art Space</string>
+    <string-array
+        name="art_names">
+        <item>Girl with a Pearl Earring</item>
+        <item>The Birth of Venus</item>
+        <item>Las Meninas</item>
+        <item>La Gioconda</item>
+        <item>The Great Wave off Kanagawa</item>
+        <item>The Kiss</item>
+        <item>The Persistence of Memory</item>
+        <item>The Son of Man</item>
+        <item>The Starry Night</item>
+    </string-array>
+    <string-array
+        name="artist_names">
+        <item>Johannes Vermeer</item>
+        <item>Sandro Botticelli</item>
+        <item>Diego Velazquez</item>
+        <item>Leonardo da Vinci</item>
+        <item>Katsushika Hokusai</item>
+        <item>Gustav Klimt</item>
+        <item>Salvador Dali</item>
+        <item>Rene Magritte</item>
+        <item>Vincent van Gogh</item>
+    </string-array>
+    <string-array
+        name="years">
+        <item>1665</item>
+        <item>1486</item>
+        <item>1656</item>
+        <item>1517</item>
+        <item>1831</item>
+        <item>1908</item>
+        <item>1931</item>
+        <item>1964</item>
+        <item>1889</item>
+    </string-array>
 </resources>
