@@ -36,4 +36,5 @@
         <item>1964</item>
         <item>1889</item>
     </string-array>
+    <string name="back">Go Back to the Gallery</string>
 </resources>
