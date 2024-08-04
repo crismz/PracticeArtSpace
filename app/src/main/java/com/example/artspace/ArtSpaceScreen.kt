@@ -19,13 +19,8 @@ import androidx.navigation.compose.rememberNavController
 import com.example.artspace.ui.HomeScreen
 import com.example.artspace.ui.OneImageScreen
 import data.Art
-import java.util.Dictionary
 
-/*
-TODO: Complete the OneImageScreen
- */
-
-enum class ArtSpaceScreen() {
+enum class ArtSpaceScreen {
     Home,
     OneImage
 }
