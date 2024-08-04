@@ -18,6 +18,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.artspace.ui.HomeScreen
 import com.example.artspace.ui.OneImageScreen
+import data.Art
+import java.util.Dictionary
 
 /*
 TODO: Complete the OneImageScreen
@@ -45,6 +47,12 @@ fun ArtSpaceGallery(
     val artNames: Array<String> = stringArrayResource(R.array.art_names)
     val artistNames: Array<String> = stringArrayResource(R.array.artist_names)
     val years: Array<String> = stringArrayResource(R.array.years)
+
+    // List of Arts
+    val arts = mutableListOf<Art>()
+    for (i in images.indices) {
+        arts.add(Art(images[i], artistNames[i], artNames[i], years[i]))
+    }
 
     Scaffold(
         topBar = {
@@ -81,7 +89,8 @@ fun ArtSpaceGallery(
             composable(route = ArtSpaceScreen.OneImage.name) {
                 OneImageScreen(
                     imageSelected,
-                    onCancelButtonClicked = {navController.popBackStack()}
+                    onCancelButtonClicked = {navController.popBackStack()},
+                    arts
                 )
             }
         }
